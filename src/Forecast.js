@@ -15,10 +15,10 @@ export default function Forecast() {
       </div>
       <div className="col-md-2 my-auto">Monday</div>
       <div className="col-md-2 my-auto">
-        <span>19</span>°/<span>15</span>°
+        <span>H: 19</span>°/<span>L: 15</span>°
       </div>
-      <div className="col-md-2 my-auto">20%</div>
-      <div className="col-md-2 my-auto">30 km/h</div>
+      <div className="col-md-2 my-auto">Humidity: 20%</div>
+      <div className="col-md-2 my-auto">Wind: 30 KM/H</div>
     </div>
   );
 }
