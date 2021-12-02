@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ReactAnimatedWeather from "react-animated-weather";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function CitySearch() {
   let [city, setCity] = useState("");
@@ -13,14 +13,7 @@ export default function CitySearch() {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      icon: (
-        <ReactAnimatedWeather
-          icon="CLEAR_DAY"
-          color="blue"
-          size={30}
-          animate={true}
-        />
-      ),
+      icon: <img src={weather.icon} alt={weather.description} />,
       description: response.data.weather[0].description,
     });
   }
@@ -51,7 +44,7 @@ export default function CitySearch() {
           <li>Temperature: {Math.round(weather.temperature)}°C</li>
           <li>Description: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
+          <li>Wind: {weather.wind} KM/H</li>
           <li>
             <img src={weather.icon} alt={weather.description} />
           </li>

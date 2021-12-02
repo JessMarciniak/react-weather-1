@@ -1,5 +1,7 @@
-.row.Tomorrow {
-  background-color: red;
+.tomorrow {
+  background-color: rgba(51, 255, 0, 0.568);
+  border: 1px rgb(161, 255, 255) solid;
+  border-radius: 4px;
 }
 
 .weatherIcon {
