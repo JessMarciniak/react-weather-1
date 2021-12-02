@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CitySearch from "./CitySearch";
 import Forecast from "./Forecast";
 import "./App.css";
+import Timestamp from "./Timestamp";
 
 export default function App() {
   return (
@@ -28,6 +29,9 @@ export default function App() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="timestamp">
+        Last Updated: <div className="date"></div>
       </div>
       <div className="codedBy d-flex justify-content-center">
         <a href="https://github.com/JessMarciniak/react-weather-1">
