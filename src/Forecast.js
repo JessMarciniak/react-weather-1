@@ -8,7 +8,7 @@ export default function Forecast() {
       <div className="col-md-4 weatherIcon my-auto">
         <ReactAnimatedWeather
           icon="CLEAR_DAY"
-          color="blue"
+          color="rgb(161, 255, 255)"
           size={30}
           animate={true}
         />{" "}

@@ -12,7 +12,7 @@ export default function App() {
           <div className="row h-100">
             <div className="col-md-3 left flex-grow-1">
               <div className="col-md my-auto mt-5 mb-2">
-                <h2>React Weather App</h2>
+                <h2>How's the weather there?</h2>
                 <CitySearch />
               </div>
             </div>
